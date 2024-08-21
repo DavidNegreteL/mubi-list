@@ -1,0 +1,19 @@
+{
+  "name": "mubi-list",
+  "version": "1.0.0",
+  "description": "View movies and series in an organized list. It’s a practice app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidNegreteL/mubi-list.git"
+  },
+  "author": "@davenl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidNegreteL/mubi-list/issues"
+  },
+  "homepage": "https://github.com/DavidNegreteL/mubi-list#readme"
+}
