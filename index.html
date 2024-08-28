@@ -9,8 +9,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+ 
 </head>
 <body class="layout">
     <header id="header" class="header">
@@ -92,9 +93,9 @@
             </div>
             
         </section>
-        <section id="categories-container" class="categories">
-            <h2 class="listing-carousel__title">Categories</h2>
-            <div class="category__list">
+        <section id="genres-container" class="genres">
+            <h2 class="listing-carousel__title">Genres</h2>
+            <div id="genres-list-container" class="genre__list">
                 <a href="#" id="action-category" class="category__link">Action</a>
                 <a href="#" id="animation-category" class="category__link">Animation</a>
             </div>
@@ -110,122 +111,7 @@
                 </a>
             </div>
             <div class="swiper carousel">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a class="carousel__slide" id="slide-1-link" aria-roledescription="slide" aria-labelledby="slide1-heading"
-                            aria-describedby="slide1-desc" href="#">
-                            <figure class="card__image-container">
-                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/pjnD08FlMAIXsfOLKQbvmO0f0MD.jpg"
-                                    alt="carousel card 1 image" class="card__image">
-                            </figure>
-                            <h3>Slide title</h3>
-                            <div id="carousel-rating-container" class="rating__container">
-                                <div id="carousel-rating-container-item-1" class="rating__container-item">
-                                    <img width="35" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1280px-IMDB_Logo_2016.svg.png"
-                                        alt="imdb-logo">
-                                    <span class="rating__item-text">
-                                        86.0/100
-                                    </span>
-                                </div>
-                                <div id="carousel-rating-container-item-2" class="rating__container-item">
-                                    <img width="16" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/278px-Rotten_Tomatoes.svg.png"
-                                        alt="roten-tomatoes-logo">
-                                    <span class="rating__item-text">
-                                        97%
-                                    </span>
-                                </div>
-                            </div>
-                            <p id="tags" class="tags">Action, Adventure, Horror</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="carousel__slide" id="slide-2-link" href="#">
-                            <figure class="card__image-container">
-                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg"
-                                    alt="carousel card 2 image" class="card__image">
-                            </figure>
-                            <h3>Slide title</h3>
-                            <div id="carousel-rating-container" class="rating__container">
-                                <div id="carousel-rating-container-item-1" class="rating__container-item">
-                                    <img width="35" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1280px-IMDB_Logo_2016.svg.png"
-                                        alt="imdb-logo">
-                                    <span class="rating__item-text">
-                                        86.0/100
-                                    </span>
-                                </div>
-                                <div id="carousel-rating-container-item-2" class="rating__container-item">
-                                    <img width="16" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/278px-Rotten_Tomatoes.svg.png"
-                                        alt="roten-tomatoes-logo">
-                                    <span class="rating__item-text">
-                                        97%
-                                    </span>
-                                </div>
-                            </div>
-                            <p id="tags" class="tags">Action, Adventure, Horror</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="carousel__slide" id="slide-3-link" aria-roledescription="slide" aria-labelledby="slide1-heading"
-                            aria-describedby="slide1-desc" href="#">
-                            <figure class="card__image-container">
-                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg"
-                                    alt="carousel card 1 image" class="card__image">
-                            </figure>
-                            <h3>Slide title</h3>
-                            <div id="carousel-rating-container" class="rating__container">
-                                <div id="carousel-rating-container-item-1" class="rating__container-item">
-                                    <img width="35" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1280px-IMDB_Logo_2016.svg.png"
-                                        alt="imdb-logo">
-                                    <span class="rating__item-text">
-                                        86.0/100
-                                    </span>
-                                </div>
-                                <div id="carousel-rating-container-item-2" class="rating__container-item">
-                                    <img width="16" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/278px-Rotten_Tomatoes.svg.png"
-                                        alt="roten-tomatoes-logo">
-                                    <span class="rating__item-text">
-                                        97%
-                                    </span>
-                                </div>
-                            </div>
-                            <p id="tags" class="tags">Action, Adventure, Horror</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="carousel__slide" id="slide-3-link" aria-roledescription="slide" aria-labelledby="slide1-heading"
-                            aria-describedby="slide1-desc" href="#">
-                            <figure class="card__image-container">
-                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg"
-                                    alt="carousel card 1 image" class="card__image">
-                            </figure>
-                            <h3>Slide title</h3>
-                            <div id="carousel-rating-container" class="rating__container">
-                                <div id="carousel-rating-container-item-1" class="rating__container-item">
-                                    <img width="35" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1280px-IMDB_Logo_2016.svg.png"
-                                        alt="imdb-logo">
-                                    <span class="rating__item-text">
-                                        86.0/100
-                                    </span>
-                                </div>
-                                <div id="carousel-rating-container-item-2" class="rating__container-item">
-                                    <img width="16" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/278px-Rotten_Tomatoes.svg.png"
-                                        alt="roten-tomatoes-logo">
-                                    <span class="rating__item-text">
-                                        97%
-                                    </span>
-                                </div>
-                            </div>
-                            <p id="tags" class="tags">Action, Adventure, Horror</p>
-                        </a>
-                    </div>
+                <div id="swiper-wrapper-trending" class="swiper-wrapper">
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -242,123 +128,7 @@
                 </a>
             </div>
             <div class="swiper carousel">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a class="carousel__slide" id="slide-1-link" aria-roledescription="slide"
-                            aria-labelledby="slide1-heading" aria-describedby="slide1-desc" href="#">
-                            <figure class="card__image-container">
-                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/pjnD08FlMAIXsfOLKQbvmO0f0MD.jpg"
-                                    alt="carousel card 1 image" class="card__image">
-                            </figure>
-                            <h3>Slide title</h3>
-                            <div id="carousel-rating-container" class="rating__container">
-                                <div id="carousel-rating-container-item-1" class="rating__container-item">
-                                    <img width="35" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1280px-IMDB_Logo_2016.svg.png"
-                                        alt="imdb-logo">
-                                    <span class="rating__item-text">
-                                        86.0/100
-                                    </span>
-                                </div>
-                                <div id="carousel-rating-container-item-2" class="rating__container-item">
-                                    <img width="16" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/278px-Rotten_Tomatoes.svg.png"
-                                        alt="roten-tomatoes-logo">
-                                    <span class="rating__item-text">
-                                        97%
-                                    </span>
-                                </div>
-                            </div>
-                            <p id="tags" class="tags">Action, Adventure, Horror</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="carousel__slide" id="slide-2-link" href="#">
-                            <figure class="card__image-container">
-                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg"
-                                    alt="carousel card 2 image" class="card__image">
-                            </figure>
-                            <h3>Slide title</h3>
-                            <div id="carousel-rating-container" class="rating__container">
-                                <div id="carousel-rating-container-item-1" class="rating__container-item">
-                                    <img width="35" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1280px-IMDB_Logo_2016.svg.png"
-                                        alt="imdb-logo">
-                                    <span class="rating__item-text">
-                                        86.0/100
-                                    </span>
-                                </div>
-                                <div id="carousel-rating-container-item-2" class="rating__container-item">
-                                    <img width="16" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/278px-Rotten_Tomatoes.svg.png"
-                                        alt="roten-tomatoes-logo">
-                                    <span class="rating__item-text">
-                                        97%
-                                    </span>
-                                </div>
-                            </div>
-                            <p id="tags" class="tags">Action, Adventure, Horror</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="carousel__slide" id="slide-3-link" aria-roledescription="slide"
-                            aria-labelledby="slide1-heading" aria-describedby="slide1-desc" href="#">
-                            <figure class="card__image-container">
-                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg"
-                                    alt="carousel card 1 image" class="card__image">
-                            </figure>
-                            <h3>Slide title</h3>
-                            <div id="carousel-rating-container" class="rating__container">
-                                <div id="carousel-rating-container-item-1" class="rating__container-item">
-                                    <img width="35" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1280px-IMDB_Logo_2016.svg.png"
-                                        alt="imdb-logo">
-                                    <span class="rating__item-text">
-                                        86.0/100
-                                    </span>
-                                </div>
-                                <div id="carousel-rating-container-item-2" class="rating__container-item">
-                                    <img width="16" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/278px-Rotten_Tomatoes.svg.png"
-                                        alt="roten-tomatoes-logo">
-                                    <span class="rating__item-text">
-                                        97%
-                                    </span>
-                                </div>
-                            </div>
-                            <p id="tags" class="tags">Action, Adventure, Horror</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="carousel__slide" id="slide-3-link" aria-roledescription="slide"
-                            aria-labelledby="slide1-heading" aria-describedby="slide1-desc" href="#">
-                            <figure class="card__image-container">
-                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg"
-                                    alt="carousel card 1 image" class="card__image">
-                            </figure>
-                            <h3>Slide title</h3>
-                            <div id="carousel-rating-container" class="rating__container">
-                                <div id="carousel-rating-container-item-1" class="rating__container-item">
-                                    <img width="35" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1280px-IMDB_Logo_2016.svg.png"
-                                        alt="imdb-logo">
-                                    <span class="rating__item-text">
-                                        86.0/100
-                                    </span>
-                                </div>
-                                <div id="carousel-rating-container-item-2" class="rating__container-item">
-                                    <img width="16" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/278px-Rotten_Tomatoes.svg.png"
-                                        alt="roten-tomatoes-logo">
-                                    <span class="rating__item-text">
-                                        97%
-                                    </span>
-                                </div>
-                            </div>
-                            <p id="tags" class="tags">Action, Adventure, Horror</p>
-                        </a>
-                    </div>
-                </div>
+                <div id="swiper-wrapper-popular" class="swiper-wrapper"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
@@ -374,130 +144,16 @@
                 </a>
             </div>
             <div class="swiper carousel">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a class="carousel__slide" id="slide-1-link" aria-roledescription="slide"
-                            aria-labelledby="slide1-heading" aria-describedby="slide1-desc" href="#">
-                            <figure class="card__image-container">
-                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/pjnD08FlMAIXsfOLKQbvmO0f0MD.jpg"
-                                    alt="carousel card 1 image" class="card__image">
-                            </figure>
-                            <h3>Slide title</h3>
-                            <div id="carousel-rating-container" class="rating__container">
-                                <div id="carousel-rating-container-item-1" class="rating__container-item">
-                                    <img width="35" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1280px-IMDB_Logo_2016.svg.png"
-                                        alt="imdb-logo">
-                                    <span class="rating__item-text">
-                                        86.0/100
-                                    </span>
-                                </div>
-                                <div id="carousel-rating-container-item-2" class="rating__container-item">
-                                    <img width="16" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/278px-Rotten_Tomatoes.svg.png"
-                                        alt="roten-tomatoes-logo">
-                                    <span class="rating__item-text">
-                                        97%
-                                    </span>
-                                </div>
-                            </div>
-                            <p id="tags" class="tags">Action, Adventure, Horror</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="carousel__slide" id="slide-2-link" href="#">
-                            <figure class="card__image-container">
-                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg"
-                                    alt="carousel card 2 image" class="card__image">
-                            </figure>
-                            <h3>Slide title</h3>
-                            <div id="carousel-rating-container" class="rating__container">
-                                <div id="carousel-rating-container-item-1" class="rating__container-item">
-                                    <img width="35" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1280px-IMDB_Logo_2016.svg.png"
-                                        alt="imdb-logo">
-                                    <span class="rating__item-text">
-                                        86.0/100
-                                    </span>
-                                </div>
-                                <div id="carousel-rating-container-item-2" class="rating__container-item">
-                                    <img width="16" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/278px-Rotten_Tomatoes.svg.png"
-                                        alt="roten-tomatoes-logo">
-                                    <span class="rating__item-text">
-                                        97%
-                                    </span>
-                                </div>
-                            </div>
-                            <p id="tags" class="tags">Action, Adventure, Horror</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="carousel__slide" id="slide-3-link" aria-roledescription="slide"
-                            aria-labelledby="slide1-heading" aria-describedby="slide1-desc" href="#">
-                            <figure class="card__image-container">
-                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg"
-                                    alt="carousel card 1 image" class="card__image">
-                            </figure>
-                            <h3>Slide title</h3>
-                            <div id="carousel-rating-container" class="rating__container">
-                                <div id="carousel-rating-container-item-1" class="rating__container-item">
-                                    <img width="35" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1280px-IMDB_Logo_2016.svg.png"
-                                        alt="imdb-logo">
-                                    <span class="rating__item-text">
-                                        86.0/100
-                                    </span>
-                                </div>
-                                <div id="carousel-rating-container-item-2" class="rating__container-item">
-                                    <img width="16" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/278px-Rotten_Tomatoes.svg.png"
-                                        alt="roten-tomatoes-logo">
-                                    <span class="rating__item-text">
-                                        97%
-                                    </span>
-                                </div>
-                            </div>
-                            <p id="tags" class="tags">Action, Adventure, Horror</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="carousel__slide" id="slide-3-link" aria-roledescription="slide"
-                            aria-labelledby="slide1-heading" aria-describedby="slide1-desc" href="#">
-                            <figure class="card__image-container">
-                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg"
-                                    alt="carousel card 1 image" class="card__image">
-                            </figure>
-                            <h3>Slide title</h3>
-                            <div id="carousel-rating-container" class="rating__container">
-                                <div id="carousel-rating-container-item-1" class="rating__container-item">
-                                    <img width="35" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1280px-IMDB_Logo_2016.svg.png"
-                                        alt="imdb-logo">
-                                    <span class="rating__item-text">
-                                        86.0/100
-                                    </span>
-                                </div>
-                                <div id="carousel-rating-container-item-2" class="rating__container-item">
-                                    <img width="16" height="17"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/278px-Rotten_Tomatoes.svg.png"
-                                        alt="roten-tomatoes-logo">
-                                    <span class="rating__item-text">
-                                        97%
-                                    </span>
-                                </div>
-                            </div>
-                            <p id="tags" class="tags">Action, Adventure, Horror</p>
-                        </a>
-                    </div>
-                </div>
+                <div id="swiper-wrapper-upcoming" class="swiper-wrapper"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./src/swiperInitializer.js"></script>
     <script src="./src/secrets.js"></script>
     <script src="./src/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
