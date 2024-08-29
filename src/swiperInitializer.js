@@ -15,8 +15,6 @@ function initializeSwiper() {
       breakpoints: {
         320: {
           slidesPerView: 1,
-          effect: "fade",
-          grabCursor: false,
         },
         640: {
           slidesPerView: 2,

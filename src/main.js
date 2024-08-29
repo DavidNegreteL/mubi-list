@@ -5,6 +5,8 @@ const api = axios.create({
   },
 });
 
+let movieGenres = [];
+
 function getRatingStars(rating) {
   const maxRating = 10;
   const maxStars = 5;
@@ -18,20 +20,32 @@ function getRatingStars(rating) {
 
   for (let i = 0; i < fullStars; i++) {
     starsHtml +=
-      '<span class="material-symbols-outlined filled">star_rate</span>';
+      '<span class="material-symbols-rounded filled">star_rate</span>';
   }
 
   if (hasHalfStar) {
-    starsHtml += '<span class="material-symbols-outlined">star_half</span>';
+    starsHtml += '<span class="material-symbols-rounded">star_half</span>';
   }
 
   const emptyStars = maxStars - fullStars - (hasHalfStar ? 1 : 0);
   for (let i = 0; i < emptyStars; i++) {
     starsHtml +=
-      '<span class="material-symbols-outlined empty">star_rate</span>';
+      '<span class="material-symbols-rounded empty">star_rate</span>';
   }
 
   return starsHtml;
+}
+
+function getGenreById(genreId) {
+  if (movieGenres.length > 0) {
+    const genre = movieGenres.find((genre) => genre.id === genreId);
+
+    if (genre) {
+      return genre.name;
+    }
+  }
+
+  return "";
 }
 
 function roundToOneDecimal(num) {
@@ -76,7 +90,15 @@ const createMovieSlide = (movie, index) => {
 
   const genreTag = document.createElement("p");
   genreTag.classList.add("tags");
-  genreTag.textContent = "Action, Adventure, Horror";
+
+  const movieGenres = movie.genre_ids;
+  const movieTextGenres = [];
+  movieGenres.forEach((movieGenre) => {
+    const genreText = getGenreById(movieGenre);
+    movieTextGenres.push(genreText);
+  });
+
+  genreTag.textContent = movieTextGenres.join(", ");
 
   figure.appendChild(img);
   ratingContainer.appendChild(ratingScaleContainer);
@@ -116,6 +138,7 @@ const getAllCategories = async () => {
   try {
     const { data } = await api("genre/movie/list");
     const genreList = data.genres;
+    movieGenres = genreList;
     genresContainer.innerHTML = "";
 
     genreList.forEach((genre, index) => {
@@ -130,8 +153,3 @@ const getAllCategories = async () => {
     console.error("Error fetching genres:", error);
   }
 };
-
-getMoviesPreview("trending/movie/day", "swiper-wrapper-trending");
-getMoviesPreview("movie/popular", "swiper-wrapper-popular");
-getMoviesPreview("movie/upcoming", "swiper-wrapper-upcoming");
-getAllCategories();
